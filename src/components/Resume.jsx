@@ -3,12 +3,14 @@ import React from 'react';
 const Resume = () => (
     <section>
       <h2>Resume</h2>
-      <a href="resume-link.pdf" download>Download my Resume</a>
+      <a href="/docs/resume.pdf" download>Download my Resume</a>
       <h3>Proficiencies</h3>
       <ul>
         <li>JavaScript</li>
         <li>React</li>
         <li>CSS</li>
+        <li>HTML</li>
+        <li>TypeScript</li>
         {/* Add more skills as needed */}
       </ul>
     </section>
