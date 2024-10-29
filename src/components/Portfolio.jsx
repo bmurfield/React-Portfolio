@@ -5,7 +5,7 @@ const Projects = [
   {
     github:"https://github.com/bmurfield/BLAM", 
     deployed: "https://bmurfield.github.io/BLAM/",
-    image: ""
+    image: "/pictures/blam.png"
   },
   {
     github:"https://github.com/bmurfield/Weather-Dashboard", 

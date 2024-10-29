@@ -1,5 +1,28 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Oxanium:wght@200..800&display=swap");
+
+/* ****************************** */
+/*        Color selectors         */
+/* ****************************** */
+
+:root {
+  --tan: #ffdea8;
+  --brown: #594b39;
+  --dark-tan: #d9b991;
+  --white: #f2f2f2;
+  --black: #0d0d0d;
+  --icons: #77684e;
+  --size: 50px;
+  --font-family: "Oxanium", sans-serif;
+}
+
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: 4rem;
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
@@ -24,8 +47,8 @@ main {
 }
 
 .profile-photo {
-  width: 150px;
-  border-radius: 50%;
+  width: 350px;
+  border-radius: 25%;
 }
 
 form {
@@ -58,12 +81,13 @@ textarea {
 
 #AboutMeP {
   width: 30%;
+  text-align: justify;
 }
 
-.Box {
+.box {
   outline: 2px solid red;
   width: 30%;
-  height: 200px;
+  height: fit-content;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -78,5 +102,16 @@ textarea {
   padding: 20px;
   width: 60%;
   justify-content: center;
+  align-items: center;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
