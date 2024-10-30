@@ -155,37 +155,38 @@ textarea {
 
 @media (max-width: 768px) {
   .box {
-    width: 80%; 
-    height: 200px; 
+    width: 80%;
+    height: 200px;
   }
 
   .photo-container {
     flex-direction: column;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
   }
 
-  .photo-lambo, .photo-penguin {
-    width: 100%; 
-    max-width: 350px; 
+  .photo-lambo,
+  .photo-penguin {
+    width: 100%;
+    max-width: 350px;
   }
 
-  #AboutMeP{
-    text-align:left;
-    width: 100%
+  #AboutMeP {
+    text-align: left;
+    width: 100%;
   }
 
-  #submitButton{
+  #submitButton {
     width: 100%;
   }
 }
 
-.icons{
+.icons {
   display: flex;
   margin: 5px;
 }
 
-#githubIcon{
+#githubIcon {
   margin-right: 20px;
 }
 

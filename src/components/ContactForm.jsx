@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// Contact form. added required to make sure each field is filled out and email address is valid.
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
