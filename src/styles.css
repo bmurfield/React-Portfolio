@@ -53,8 +53,19 @@ main {
   padding: 2rem;
 }
 
-.profile-photo {
-  width: 350px;
+.photo-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.photo-lambo {
+  width: 225px;
+  border-radius: 25%;
+}
+
+.photo-penguin {
+  width: 225px;
   border-radius: 25%;
 }
 
@@ -92,12 +103,12 @@ textarea {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
   transition: border 0.3s ease, background-color 0.3s ease;
 }
 
 #submitButton:hover {
-  border: 2px solid var(--crimson); 
+  border: 2px solid var(--crimson);
   background-color: var(--night);
 }
 
@@ -139,13 +150,38 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
+
+/* adjustments made so viewing on mobile looks better */
+
 @media (max-width: 768px) {
   .box {
-    width: 80%; /* Make boxes take up more width on smaller screens */
-    height: 200px; /* Reduce height to make it fit better on mobile */
+    width: 80%; 
+    height: 200px; 
+  }
+
+  .photo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+
+  .photo-lambo, .photo-penguin {
+    width: 100%; 
+    max-width: 350px; 
+  }
+
+  #AboutMeP{
+    text-align:left;
+    width: 100%
+  }
+
+  #submitButton{
+    width: 100%;
   }
 }
 
+/* YOU KNOW YOU WANT TO PRESS IT */
+/* Fight song button on About Me page */
 #partyButton {
   width: auto;
   background-color: var(--kublue);
@@ -156,15 +192,15 @@ textarea {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
   transition: border 0.3s ease, background-color 0.3s ease;
   display: block;
   margin: 0 auto;
+  margin-top: 10px;
   white-space: nowrap;
 }
 
 #partyButton:hover {
-  border: 2px solid var(--crimson); 
+  border: 2px solid var(--crimson);
   background-color: var(--night);
 }
-
