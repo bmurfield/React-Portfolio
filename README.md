@@ -23,6 +23,8 @@ A portfolio using React that displays some of my previous projects as well as a 
 
 This project is deployed using Netlify, so just click on the link below to be taken to the webpage:
 
+https://marvportfolio.netlify.app/
+
 Once on the page the tabs on the top navigate to different sections. The links below the pictures in the portfolio page take you to the respective deployed pages and Github repos.
 
 ## Usage
