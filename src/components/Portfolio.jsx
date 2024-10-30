@@ -24,7 +24,7 @@ const Projects = [
   },
   {
     github:"https://github.com/bmurfield/React-Portfolio", 
-    deployed: "",
+    deployed: "https://github.com/bmurfield/React-Portfolio",
     image: "/pictures/port1.jpg"
   },
   {

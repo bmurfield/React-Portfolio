@@ -180,6 +180,15 @@ textarea {
   }
 }
 
+.icons{
+  display: flex;
+  margin: 5px;
+}
+
+#githubIcon{
+  margin-right: 20px;
+}
+
 /* YOU KNOW YOU WANT TO PRESS IT */
 /* Fight song button on About Me page */
 #partyButton {

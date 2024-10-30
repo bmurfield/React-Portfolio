@@ -3,12 +3,14 @@ import React from "react";
 const PortfolioItem = ({ project }) => (
   <section className="box">
     <img src={project.image} className="images"/>
-    <a href={project.github} target="_blank" rel="noopener noreferrer">
-      <i class="fa-brands fa-github"></i>
+    <div className="icons">
+    <a href={project.github} target="_blank" rel="noopener noreferrer" id="githubIcon">
+      <i className="fa-brands fa-github"></i>
     </a>
     <a href={project.deployed} target="_blank" rel="noopener noreferrer">
-      <i class="fa-solid fa-link"></i>
+      <i className="fa-solid fa-link"></i>
     </a>
+    </div>
   </section>
 );
 
