@@ -7,16 +7,17 @@
 /* ****************************** */
 
 :root {
-  --tan: #ffdea8;
-  --brown: #594b39;
-  --dark-tan: #d9b991;
-  --white: #f2f2f2;
+  --kublue: #0051ba;
+  --crimson: #e8000d;
+  --yellow: #ffc82d;
+  --grey: #85898a;
+  --sky: #73cbf2;
+  --night: #003459;
   --black: #0d0d0d;
   --icons: #77684e;
   --size: 50px;
   --font-family: "Oxanium", sans-serif;
 }
-
 
 body {
   font-family: var(--font-family);
@@ -25,11 +26,12 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
+  background-color: #d6d8da;
 }
 
 header,
 footer {
-  background: #333;
+  background: var(--kublue);
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -77,6 +79,21 @@ textarea {
 
 #submitButton {
   width: 30%;
+  background-color: var(--kublue);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent; 
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+#submitButton:hover {
+  border: 2px solid var(--crimson); 
+  background-color: var(--night);
 }
 
 #AboutMeP {
@@ -85,20 +102,21 @@ textarea {
 }
 
 .box {
-  outline: 2px solid red;
+  outline: 2px solid var(--crimson);
   width: 30%;
-  height: fit-content;
-  margin: 5px;
+  height: 234px;
+  margin: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #PortfolioItemContainer {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid green;
+  outline: 5px solid var(--night);
   padding: 20px;
   width: 60%;
   justify-content: center;
@@ -108,10 +126,39 @@ textarea {
 .images {
   width: 100%;
   height: 100%;
+  object-fit: fill;
 }
 
-.center{
+.center {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .box {
+    width: 80%; /* Make boxes take up more width on smaller screens */
+    height: 200px; /* Reduce height to make it fit better on mobile */
+  }
+}
+
+#partyButton {
+  width: auto;
+  background-color: var(--kublue);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent; 
+  transition: border 0.3s ease, background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+#partyButton:hover {
+  border: 2px solid var(--crimson); 
+  background-color: var(--night);
 }

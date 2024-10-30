@@ -5,37 +5,37 @@ const Projects = [
   {
     github:"https://github.com/bmurfield/BLAM", 
     deployed: "https://bmurfield.github.io/BLAM/",
-    image: "/pictures/blam.png"
+    image: "/pictures/border2.png"
   },
   {
     github:"https://github.com/bmurfield/Weather-Dashboard", 
     deployed: "https://weather-dashboard-11tr.onrender.com/",
-    image: ""
+    image: "/pictures/weather2.jpg"
   },
   {
     github:"https://github.com/bmurfield/Driving-Simulator", 
     deployed: "https://drive.google.com/file/d/1ABIhLAlLVRMMr_ZSpWCli1YI9WYp2PZs/view",
-    image: ""
+    image: "/pictures/driver.jpg"
   },
   {
     github:"https://github.com/bmurfield/README-Generator", 
     deployed: "https://drive.google.com/file/d/1TPyhlGXWn3JdqjgfLQl0GAO54ap0_MNl/view",
-    image: ""
+    image: "/pictures/readme2.jpg"
   },
   {
     github:"https://github.com/bmurfield/React-Portfolio", 
     deployed: "",
-    image: ""
+    image: "/pictures/port1.jpg"
   },
   {
     github:"https://github.com/bmurfield/", 
-    deployed: "",
-    image: ""
+    deployed: "https://github.com/bmurfield/",
+    image: "/pictures/football3.jpg"
   }
 ]
 
 const Portfolio = () => (
-    <section>
+    <section className='center'>
       <h2>Portfolio</h2>
       <p>Check out some of my projects below.</p>
       <div id="PortfolioItemContainer">
