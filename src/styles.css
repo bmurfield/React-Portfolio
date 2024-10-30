@@ -44,6 +44,11 @@ footer a {
   text-decoration: none;
 }
 
+nav a.active {
+  font-weight: bold;
+  color: var(--yellow);
+}
+
 main {
   padding: 2rem;
 }
@@ -162,3 +167,4 @@ textarea {
   border: 2px solid var(--crimson); 
   background-color: var(--night);
 }
+
